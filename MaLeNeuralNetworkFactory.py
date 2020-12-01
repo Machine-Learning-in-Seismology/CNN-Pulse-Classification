@@ -1,4 +1,4 @@
-from MaLeConvSeq import MaLeConvSe
+from MaLeConvSeq import MaLeConvSeq
 
 
 class MaLeNeuralNetworkFactory(object):
