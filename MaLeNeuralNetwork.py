@@ -17,11 +17,11 @@ class MaLeNeuralNetwork(object):
     def model(self, val):
         pass
 
-    def train(self, x, y, epoch):
+    def train(self, x, y,epoch):# 
         plot_model(self.model, to_file='model_plot.png', show_shapes=True, show_layer_names=True)
-        early_stop = EarlyStopping(monitor='val_loss', patience=10, verbose=0, mode='auto', restore_best_weights=True)
+        early_stop = EarlyStopping(monitor='val_loss', patience=5, verbose=0, mode='auto', restore_best_weights=True)
         self.model.fit(x=x, y=y, batch_size=1000, epochs=epoch, validation_split=0.25,
-                       callbacks=[early_stop])
+                       callbacks=[early_stop])#
         return early_stop.stopped_epoch
 
     def evaluate(self, x, y):
