@@ -5,7 +5,7 @@ The code for training, comprehensive of crossfold validation, is in the nn.py fi
 
 # Data
 
-Data can be found here.
+Data can be found [here](https://doi.org/10.6084/m9.figshare.16586234).
 
 # Citation
 Soon to be announced...
